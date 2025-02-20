@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLink } from '@angular/router';
 import { DadoComponent } from './dado/dado.component';
 import { CronometroComponent } from './cronometro/cronometro.component';
 import { SelectornumericoComponent } from './selectornumerico/selectornumerico.component';
@@ -16,7 +16,7 @@ import { PipePersonalizadaComponent } from './pipe-personalizada/pipe-personaliz
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, DadoComponent , CronometroComponent, SelectornumericoComponent, ProgressBarComponent, FormularioReactivoComponent, FormularioPlantillaComponent, FormularioBonitoComponent,CardFancyExample, MatButtonModule, MatCardModule, MatToolbarModule, DatepickerCustomHeaderExample, PipePersonalizadaComponent],
+  imports: [RouterOutlet, RouterLink, DadoComponent , CronometroComponent, SelectornumericoComponent, ProgressBarComponent, FormularioReactivoComponent, FormularioPlantillaComponent, FormularioBonitoComponent,CardFancyExample, MatButtonModule, MatCardModule, MatToolbarModule, DatepickerCustomHeaderExample, PipePersonalizadaComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
