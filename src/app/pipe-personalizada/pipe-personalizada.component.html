@@ -1,0 +1,38 @@
+<div class="container mt-5 ">
+  <div class="row d-flex justify-content-between">
+  <div class="col-md-4">
+    <h2>Números en castellano</h2>
+    <ul>
+      @for(valor of vector;track valor) {
+      <li>
+        {{valor | letras}}
+      </li>
+      }
+    </ul>
+  </div>
+  
+  <div class="col-md-4">
+    <h2>Números en inglés</h2>
+    <ul>
+      @for(valor of vector;track valor) {
+      <li>
+        {{valor | letras:'ingles'}}
+      </li>
+      }
+    </ul>
+  </div>
+
+  <div class="col-md-4">
+    <h2>Números en portugués</h2>
+    <ul>
+      @for(valor of vector;track valor) {
+      <li>
+        {{valor | letras:'portugues'}}
+      </li>
+      }
+    </ul>
+  </div>
+</div>
+</div>
+
+<router-outlet />
